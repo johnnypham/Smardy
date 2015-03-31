@@ -26,10 +26,10 @@ a:hover{
 
 .get-start{
   color: #fff;
-  font-size: 3rem;
+  font-size: 50px;
   text-transform: uppercase;
   background: #db3d67;
-  padding: 30px 0px;
+  padding: 27px 0px;
   border-radius: 10px;
   box-shadow: 0px 10px 0px #b92c51;
     margin-bottom: 100px;
@@ -40,8 +40,8 @@ a:hover{
   box-shadow: 0px 5px 0px #b92c51
 }
 .btn-sign{
-  padding: 30px;
-  font-size: 3rem;
+  padding: 20px 30px;
+  font-size: 44px;
    border-radius: 10px;
   color: #fff;
    margin-bottom: 45px;
@@ -55,7 +55,7 @@ a.sign-google{
    box-shadow: 0px 5px 0px #bb3333;
 }
 #home h3{
-    font-size: 3rem;
+    font-size: 44px;
   color: #db3d67;
   margin-top: 70px;
   margin-bottom: 50px;
@@ -82,10 +82,12 @@ a.sign-google{
    width: 600px;
   display: block;
   margin: 0 auto;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   color: #fff;
+  font-size: 40px;
   border-radius: 10px;
-  padding: 30px 0px;
+  padding: 22px 0px;
+
 }
 .title-sub{
 
@@ -133,7 +135,7 @@ padding: 5px 0px;
   font-size: 3rem;
 }
 .title-main{
-font-size: 3rem;
+font-size: 50px;
   color: #f75487;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -152,7 +154,7 @@ header .menu a{
   background-repeat: no-repeat;
 }
 .icon-math{
-  top: -9px;
+  top: 0px;
   display: block;
   float: left;
   position: relative;
@@ -163,7 +165,7 @@ header .menu a{
   background-repeat: no-repeat;
 }
 .icon-phy{
-top: -9px;
+top: 0px;
   left: 10px;
   display: block;
   float: left;
@@ -176,7 +178,7 @@ top: -9px;
 }
 
 .pro-subject{
-    top: -9px;
+    top: 0px;
   display: block;
   float: right;
   position: relative;
@@ -192,10 +194,10 @@ top: -9px;
   position: relative;
 }
 .more-btn{
-     box-shadow: 0px 5px 0px #645674;
-  background-color: #ffffff;
-    color: #6d607c;
-    text-transform: uppercase;
+  color: #6d607c;
+  text-transform: uppercase;
+  font-size: 26px;
+  text-decoration: underline;
 }
 .math:after,.phy:after {
   content: ' ';
@@ -204,7 +206,7 @@ top: -9px;
   display: block;
   position: absolute;
   border-radius: 10px 0px 0px 10px;
-  top: 66px;
+  top: 68px;
 
 }
 .math-25:after,.phy-25:after{
@@ -226,11 +228,159 @@ header{
   background-color: #ffffff;
 }
 .topic{
+    font-size: 36px;
+  font-weight: 300;
   color: #202e38;
 }
 .title-topic{
-  margin-left: 30px;
+ margin-left: 20px;
+  float: left;
+
+
+}
+.btn-subject.topic{
+  width: 670px
+}
+.topic .title-sub{
+  font-weight: 400;
+  margin-left: 5px;
+  width: 420px;
 }
 #topic-list .main{
   background-color: #04b4d4
+}
+.topic-subject{
+    top: 0px;
+  display: block;
+  float: right;
+  position: relative;
+  background-image: url('images/sprite.png');
+  background-position:-310px -102px;
+  width: 80px;
+  height: 67px;
+  background-repeat: no-repeat
+}
+.math-view-25{
+   background-position: -630px -166px;
+  top: -13px;
+}
+.math-view-50{
+   background-position: -530px -166px;
+  top: -13px;
+}
+.math-view-75{
+   background-position:  -435px -166px;
+  top: -13px;
+}
+.math-view-100{
+   background-position: -338px -166px;
+  top: -13px;
+}
+.math-star-0:after{
+ background-image: url('images/sprite.png');
+   background-position: -338px -418px;
+  top: -13px;
+  display: block;
+  content: ' ';
+  width: 80px;
+  height: 67px;
+  background-repeat: no-repeat
+}
+.math-star-1:after{
+ background-image: url('images/sprite.png');
+   background-position:-434px -418px;
+  top: -13px;
+  display: block;
+  content: ' ';
+  width: 80px;
+  height: 67px;
+  background-repeat: no-repeat
+}
+.math-star-2:after{
+ background-image: url('images/sprite.png');
+   background-position: -531px -418px;
+  top: -13px;
+  display: block;
+  content: ' ';
+  width: 80px;
+  height: 67px;
+  background-repeat: no-repeat
+}
+.math-star-3:after{
+ background-image: url('images/sprite.png');
+   background-position:-630px -418px;
+  top: -13px;
+  display: block;
+  content: ' ';
+  width: 80px;
+  height: 67px;
+  background-repeat: no-repeat
+}
+.topic:first-child{
+  margin-top: 30px
+}
+/**/
+span.title-topic-list {
+  width: 540px;
+  display: inline-block;
+  margin-left: 20px;
+}
+#topic .topic-subject{
+  top: 10px
+}
+#topic .list-thin{
+  top: -6px
+}
+.topic-subject.list{
+  background-position: -253px -102px;
+}
+.main.bg-blue{
+  background: #04b4d4;
+}
+/**/
+.quizzes-drop{
+  width: 640px;
+  background: #2d2734;
+  display: none;
+    border-radius: 0px 0px 10px 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 45px;
+  margin-top: -15px;
+  padding-top: 30px;
+}
+.quizzes{
+   width: 600px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: #f75386;
+  font-size: 36px;
+  color: #fff;
+  padding: 20px 0px;
+  border-radius: 10px;
+  box-shadow: 0 10px 0px #db3e67;
+}
+.btn-default-quizzes{
+    width: 284px;
+  padding: 20px 0px;
+  font-size: 36px;
+  border-radius: 10px;
+    margin-bottom: 25px;
+  display: block;
+  color: #4c5864;
+  background: #fff;
+    text-align: center;
+}
+.quizzes-left,.quizzes-right{
+  margin-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  margin-right: 30px;
+  float: left;
+}
+.quizzes-right{
+  margin-left: 0px;
+  margin-right: 0px
 }
