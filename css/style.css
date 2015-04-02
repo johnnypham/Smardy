@@ -19,6 +19,9 @@ a:hover{
      padding-top: 100px;
   text-align: center;
 }
+.min-800px{
+  min-height: 800px
+}
 #home header img{
   margin: 0 auto;
   margin-bottom: 85px;
