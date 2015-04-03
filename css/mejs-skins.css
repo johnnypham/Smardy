@@ -54,10 +54,14 @@ height: 144px;
 .mejs-controls .mejs-volume-button .mejs-volume-slider{
 	left: 51px;
 }
+.mejs-poster{
+	  background-size: cover;
+}
 .mejs-controls .mejs-mute button{
   background: url(images/sol.jpg);
   padding: 0px;
   height: 88px;
+  float: left;
   width: 75px;
   background-position: 0 0;
   margin: 0px;
