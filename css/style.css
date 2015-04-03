@@ -956,3 +956,112 @@ body.nav-expanded {
 
 
 /*End Menu*/
+/*Tabs*/
+.ui-widget-content{
+  background: #2d2734;
+  color: #fff;
+    margin-top: 60px;
+}
+.ui-widget-header{
+   background: #2d2734;
+   color: #fff;
+     border: none;
+}
+.video-list{
+  background: #fff;
+  width: 670px;
+  position: relative;
+    box-shadow: 0 5px 0px #594b69;
+}
+.video-list:before{
+  content: ' ';
+  box-shadow: 0px 5px 0px #04d4aa;
+  height: 20px;
+  display: block;
+  position: absolute;
+  border-radius: 10px 0px 0px 10px;
+  bottom: 0px;
+}
+.ui-tabs .ui-tabs-panel{
+  padding: 0px;
+  margin-top: 30px;
+}
+.video-list-25:before{
+  width: 25%;
+}
+.video-list-50:before{
+  width: 50%;
+}
+.video-list-100:before{
+  width: 100%;
+   border-radius: 10px 0px 10px 10px;
+}
+.topic-video{
+  background-image: url('images/sprite.png');
+  width: 69px;
+  height: 65px;
+  float: left;
+  background-position: -1px -656px;
+  top: 55px;
+  background-color: #dcdcdc;
+}
+.title-video-list{width: 500px}
+.icon-play-video{
+   background-image: url('images/sprite.png');
+  width: 69px;
+  height: 65px;
+  float: right;
+  background-position: -173px -97px;
+}
+.ui-tabs {
+  border-radius: 0px;
+  border:none;
+}
+.video-list-tabs{
+  background-image: url('images/sprite.png');
+  width: 69px;
+  height: 65px;
+  float: left;
+  background-position:-416px -87px;
+
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+    border-radius: 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+}
+.ui-tabs-anchor{
+    font-size: 36px;
+  line-height: 66px;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+  border: none;
+  background: none
+}
+.video-note{
+   background-image: url('images/sprite.png');
+  width: 69px;
+  height: 65px;
+  float: left;
+  background-position:-496px -87px; 
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    border: none;
+  background: none
+}
+.ui-tabs .ui-tabs-nav li{
+  padding-right: 50px
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-default a{
+  color: #594b69
+}
+a:focus{
+  outline: none!important
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+  color: #fff;
+}.ui-tabs .ui-tabs-nav li.ui-tabs-active a:focus{
+  outline: none
+}

@@ -1,0 +1,65 @@
+.mejs-overlay-button{
+background: url(images/play-center.png);
+width: 144px;
+height: 144px;
+}
+.mejs-overlay:hover .mejs-overlay-button{
+	background-position: 0px
+}
+.mejs-controls:hover{
+/*background: url(images/play-center.png);*/
+
+}
+.mejs-container .mejs-controls{
+  visibility: visible!important;
+  bottom: -30px;
+    height: 88px;
+  background: #3a3546;
+}
+
+.mejs-controls .mejs-play button{
+	  background: url('images/pause.jpg');
+  width: 88px;
+  margin: 0px;
+  padding: 0px;
+  height: 88px;
+
+}
+.mejs-container .mejs-controls .mejs-time{
+	display:none!important
+}
+.mejs-controls div.mejs-time-rail{
+	width: 520px!important;
+	  margin-top: 30px;
+  margin-left: 85px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total{
+	width: 520px!important;
+	background: #2d2734
+}
+.mejs-container{
+	display: block;
+	margin: 0 auto;
+	background: #2d2734;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded{
+	background: #2d2734
+}
+.mejs-controls .mejs-time-rail .mejs-time-current{
+	background: #594b69
+}
+.mejs-controls .mejs-time-rail .mejs-time-handle{
+	background: yellow
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider{
+	left: 51px;
+}
+.mejs-controls .mejs-mute button{
+  background: url(images/sol.jpg);
+  padding: 0px;
+  height: 88px;
+  width: 75px;
+  background-position: 0 0;
+  margin: 0px;
+  margin-left: 30px;
+}
