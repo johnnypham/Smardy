@@ -14,12 +14,109 @@
     <link href="css/mediaelementplayer.min.css" rel="stylesheet">
     <link href="css/mejs-skins.css" rel="stylesheet">
     <link href="css/jScrollbar.jquery.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.custom-scrollbar.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <style type="text/css">
+      .scrollable.gray-skin .scroll-bar {
+  background-color: #3a3546;
+  border-radius: 5px;
+    border: none;
+}
+.scrollable.gray-skin .scroll-bar.vertical{
+  width: 9px
+}
+.scrollable .scroll-bar.vertical .thumb {
+  width: 100%;
+  min-height: 15px!important;
+  height: 10px!important;
+  border-radius: 100%;
+  width: 15px;
+  position: relative;
+  background: #fff!important;
+  left: -3px;
+
+}
+        /*Vertical scrollbar - set width and height of a div you want to add a scrollbar to*/
+        #vertical-scrollbar-demo {
+            height:200px;
+            width: 625px;
+        }
+
+        /*Horizontal scrollbar - set width and height of a div you want to add a scrollbar to*/
+        #horizontal-scrollbar-demo {
+            width: 400px;
+            height: 200px;
+        }
+
+        /*Horizontal scrollbar - set width of overview or make it expand horizontal like below*/
+        #horizontal-scrollbar-demo .overview {
+            /*width: 1836px;*/
+            /* or */
+            white-space: nowrap;
+        }
+
+        #horizontal-scrollbar-demo img {
+            height: 180px;
+            width: 180px;
+        }
+
+        /*Vertical and horizontal scrollbar - set width and height of a div you want to add a scrollbar to*/
+        #vertical-horizontal-scrollbar-demo {
+            width: 400px;
+            height: 200px;
+        }
+
+        #vertical-horizontal-scrollbar-demo .overview {
+            width: 600px;
+        }
+
+        /* Vertical and horizontal scrollbar - one extra step required - add width of overview - overall width of scrolled content*/
+        #min-thumb-size-demo .overview {
+            width: 600px;
+        }
+
+        /*Vertical and horizontal scrollbar - set width and height of a div you want to add a scrollbar to*/
+        #min-thumb-size-demo {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* Vertical and horizontal scrollbar - one extra step required - add width of overview - overall width of scrolled content*/
+        #min-thumb-size-demo .overview {
+            width: 600px;
+        }
+
+        #min-thumb-size-demo .vertical .thumb {
+            min-height: 150px;
+        }
+
+        #min-thumb-size-demo .horizontal .thumb {
+            min-width: 300px;
+        }
+
+        #fixed-thumb-size-demo {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* Vertical and horizontal scrollbar - one extra step required - add width of overview - overall width of scrolled content*/
+        #fixed-thumb-size-demo .overview {
+            width: 600px;
+        }
+
+        /*No scrollbar needed*/
+        #no-scrollbar-needed {
+            max-height: 100px;
+            max-width: 400px;
+        }
+
+    </style>
+
   </head>
 
   <body>
@@ -96,17 +193,12 @@
                  <h3 id="active-add-note" class="title-note-video">5.1 Intro to function <span class="icon-add-note"></span></h3>
                   <article class="jScrollbar5">
 
-                    <article class="jScrollbar_mask">
+                    <article id="vertical-scrollbar-demo" class="jScrollbar_mask gray-skin demo">
                       <p>
                       semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae lacus massa. Etiam facilisis metus odio. Cras sit amet ipsum fermentum massa cursus elementum non vitae lectus. Maecenas porta, felis eu volutpat luctus, nunc massa ullamcorper leo, sed sollicitudin odio justo eu ante. Etiam pharetra pharetra rhoncus. Praesent pretium ornare consectetur. Proin lacinia pellentesque mattis. Vestibulum egestas, leo quis cursus pellentesque, metus enim interdum justo, vitae rhoncus dui nisi eu dui.
                       Proin venenatis, purus quis posuere adipiscing, felis turpis fermentum leo, sed pharetra tortor magna mattis enim. Vivamus urna lacus, blandit non aliquam vel, condimentum in magna. Maecenas suscipit sagittis nibh, a ultrices dui blandit eu. Aliquam urna erat, hendrerit sed gravida vitae, sodales sit amet ligula. Maecenas lobortis dolor eu sem porta pretium. Duis eu consectetur magna. Nullam egestas nunc sed lorem gravida eu congue nisl commodo. Etiam id enim urna. Ut consequat ultricies diam in dignissim. Morbi mi quam, aliquet posuere feugiat vitae, ornare vel lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis in dignissim orci. Phasellus viverra ullamcorper mollis. Sed aliquam commodo posuere. Cras non varius libero. Nulla consequat mi elementum libero porttitor tincidunt. Mauris venenatis malesuada sagittis. Nam viverra risus ut tortor convallis porttitor. Morbi convallis commodo massa, quis viverra massa pretium vitae. 
                       </p>
                     </article>
-
-                    <article class="jScrollbar_draggable">
-                      <a href="#" class="draggable"></a>
-                    </article>
-                    <article class="clr"></article>
                   </article>
               </article>
               
@@ -131,6 +223,8 @@
     <script src="js/main.js"></script>
       <script src="js/jScrollbar.jquery.js"></script>
     <script src="js/jquery-mousewheel.js"></script>
+    <script src="js/jquery.custom-scrollbar.js"></script>
+    
    
     <script>
   $(function() {
@@ -139,6 +233,9 @@
   </script> <script>
     $(document).ready(function(){                       
        $('.jScrollbar5').jScrollbar();
+
+      $(".demo").customScrollbar();
+       
        //Navigation Menu Slider
         $('#nav-expander').on('click',function(e){
           e.preventDefault();

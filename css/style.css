@@ -488,7 +488,7 @@ span.title-topic-list {
 }
 .smardy-left{
   display: inline-block;
-  width: 420px
+  width:340px
 }
 #quizz footer{
   background: #939393;
@@ -1585,4 +1585,145 @@ background-image: url('images/sprite.png');
   height: 59px;
   background-position: 22px -993px;
   float: left
+  }
+  .vote-list-smardy{
+      display: inline-block;
+  width: 150px;
+  position: relative;
+  margin-left: 20px;
+  }
+  .vote-list-smardy:after{
+  content: ' ';
+  height: 30px;
+  top: 30px;
+  display: block;
+  left: -10px;
+  position: absolute;
+  width: 2px;
+  background: #fff;
+  }
+  .friend-li  a.btn-challenge{
+  width: 220px;
+  padding: 10px 0px;
+  background: #db3e67;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  }
+.footer-smardy-list .active-footer{
+  background: #fff;
+}
+.footer-smardy-list .active-footer span{
+  color: #de5377
+}
+.footer-smardy-list,.friend-list-footer{
+  width: 750px;
+  display: block;
+  margin: 0 auto
+}
+.footer-smardy-list .footer-center{
+  background: none;
+  color: #eeeeee
+}
+.footer-smardy-list .face-icon{
+  background-position: -564px -912px;
+}
+.setting-left,.setting-right{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.title-setting{
+font-size: 27px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+}
+.status-setting{
+font-size: 60px;
+color: #db3e67;
+  font-weight: 100;
+text-transform: uppercase;
+}
+.status-setting.off{
+ color: #7e6a95;
+}
+#setting-sounds{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #41364c;
+}
+.monthy-plan{
+ background-color: #3dbbce;
+  font-size: 36px;
+}
+.annual-plan{
+ font-size: 36px;
+   background-color:#db3e67
+}
+.des-subscribe{
+  font-size: 31px;
+  color: #fff;
+  margin: 0px 0px 50px 0px;
+  display: inline-block;
+}
+.friend-list-footer a{
+  color: #fff
+}
+.friend-list-footer .footer-center.active-friends a{
+  color: #3050c9
+}
+.ranking-li span {
+  width: 215px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #d9d9d9;
+  font-size: 27px;
+}
+
+.ranking-li img {
+  width: 99px;
+  margin-right: 30px;
+  margin-left: 20px;
+  float: left;
+}
+.ranking-li {
+  display: block;
+  border-bottom: 1px solid #443b4d;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+.ranking-li big{
+  font-size: 26px;
+  font-weight: 300;
+  color: #9482a8
+}
+.btn-ranking{
+  padding: 10px;
+}
+.ranking-li .ranking-list-smardy span {
+  width: 45px;
+}
+ .btn-ranking {
+  width: 170px;
+  padding: 12px 12px 13px 12px;
+  border-radius: 70px 0px 0px 70px;
+  font-size: 30px;
+  border: none;
+  float: none;
+  position: relative;
+  top: -16px;
+  left: 4px;}
+
+.ranking-li .ranking-list-smardy  span{
+  margin: 0px
+}
+.ranking-list-smardy  {
+  background: #db3e67;
+  border: none;
+  border-radius: 0 40px 40px 0px;
+  padding: 7px 18px;
   }

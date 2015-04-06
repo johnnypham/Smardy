@@ -23,92 +23,72 @@
   </head>
 
   <body>
-    <section id="frient-list">
-      <section class="head-cus page-frient-list">
+    <section id="topic">
+      <section class="head-cus page-topic">
         <header>
           <article class="container">
               <span class="back"><a href="#"></a></span>
-              <h3 class="title-sub-header">friend list</h3>
+              <h3 class="title-sub-header">Setting</h3>
               <span id="nav-expander" class="menu"><a href="#"></a></span>
           </article>
         </header>
-        <article class="search container">
-          <span class="icon-search"><a class="search-btn" href="#"></a></span>
-          <input type="text" placeholder="search">
-        </article>
-      
-
-            <article class="thread-friends">
-            
-                <span class="">facebook friend list</span>
-                
-          
-            </article> 
+        <article id="tab-sign" class="container">
+          <section id="croll-menu">
+           <article class="profile-fixed">
+              <span id="nav-close" class="icon-close-menu"><a href="#"></a></span>
+           </article>
+            <article class="info-fixed">
+              <span id="author" class="images-author"><a href="#"></a></span>
+              <h3 class="title-sub-header">Lam Nguyen</h3>
+              <span id="logout" class="author-logout"><a href="#"></a></span>
+           </article>
+           <nav>
+            <ul>
+              <li><a href="#"><span class="icon-menu ic-home"></span>Home</a></li>
+              <li><a href="#"><span class="icon-menu ic-sbj"></span>Subjects</a></li>
+              <li><a href="#"><span class="icon-menu ic-his"></span>History</a></li>
+              <li><a href="#"><span class="icon-menu ic-cha"></span>Challenge</a></li>
+              <li><a href="#"><span class="icon-menu ic-fri"></span>Friends</a></li>
+              <li><a href="#"><span class="icon-menu ic-mes"></span>Messages</a></li>
+              <li><a href="#"><span class="icon-menu ic-dis"></span>discussion</a></li>
+              <li><a href="#"><span class="icon-menu ic-ran"></span>Ranking</a></li>
+              <li><a href="#"><span class="icon-menu ic-sub"></span>Subscribe</a></li>
+              <li><a href="#"><span class="icon-menu ic-set"></span>Settings</a></li>
+            </ul>
+           </nav>
+          </section>         
+        </article>   
         <article class="main">
-            <article class="min-800px container">
-            <article class="friend-li">
-              <img src="images/avatar.png" alt="friend">
-              <span>
-                Lam Nguyen<br>
-                <big>Vietnam</big>
-              </span>
-              <a href="#" btn-invite>Invite</a>
-            </article>
-            <article class="friend-li">
-              <img src="images/avatar.png" alt="friend">
-              <span>
-                Lam Nguyen<br>
-                <big>Vietnam</big>
-              </span>
-              <a href="#" btn-invite>Invite</a>
-            </article>
-            <article class="friend-li">
-              <img src="images/avatar.png" alt="friend">
-              <span>
-                Lam Nguyen<br>
-                <big>Vietnam</big>
-              </span>
-              <a href="#" btn-invite>Invite</a>
-            </article>
-            <article class="friend-li">
-              <img src="images/avatar.png" alt="friend">
-              <span>
-                Lam Nguyen<br>
-                <big>Vietnam</big>
-              </span>
-              <a href="#" btn-invite>Invite</a>
-            </article>
+            <article class="container min-800px text-center setting-page">
+              <article class="width-670px">
+
+                <article id="setting-sounds">
+                    <article class="setting-left">
+                       <span class="title-setting">Music</span>
+                       <span class="status-setting on">ON</span>
+                    </article>
+                    <article class="setting-right">
+                       <span class="title-setting">Sound Effect</span>
+                       <span class="status-setting on">ON</span>
+                    </article>                   
+
+                </article>
+                 <article id="setting-privacy"></article>
+                     <article class="setting-left">
+                       <span class="title-setting">Privacy</span>
+                       <span class="status-setting on">ON</span>
+                    </article>
+                    <article class="setting-right">
+                       <span class="title-setting">Push Notification</span>
+                       <span class="status-setting off">OFF</span>
+                    </article>               
+
+               </article>
             </article>
         </article>
+
       </section>
-      <footer>
-        <article class="friend-list-footer">
-        <article class="footer-left">
-          <span>
-            <a href="#">
-              <i class="footer-icon smardy-icon"></i>
-              smardy
-            </a>
-          </span>
-        </article>
-        <article class="footer-center active-friends">
-          <a href="#">
-            <span>
-              <i class="footer-icon face-icon"></i>
-              facebook
-            </span>
-          </a>
-        </article>
-                <article class="footer-right">
-            <a href="#">
-              <span>
-               <i class="footer-icon contact-icon"></i>
-                contact
-              </span>
-            </a>
-        </article>
-        </article>
-      </footer>
+
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
@@ -137,12 +117,10 @@
         });
          $( "#tabs" ).tabs();
          
+       $('.ui-tabs-anchor').on('click',function(){
+        
 
-$(".dropdown-history").bind("click", function(){
-    $(".history-drop").slideToggle();
-    return false;
-    
-})
+       })
         
         // Initialize navgoco with default options
         $(".main-menu").navgoco({
