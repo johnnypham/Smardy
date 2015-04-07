@@ -23,76 +23,67 @@
   </head>
 
   <body>
-    <section id="topic">
-      <section class="head-cus page-topic">
+    <section id="frient-list">
+      <section class="head-cus page-frient-list">
         <header>
           <article class="container">
               <span class="back"><a href="#"></a></span>
-              <h3 class="title-sub-header">discussion</h3>
+              <h3 class="title-sub-header">Keith</h3>
               <span id="nav-expander" class="menu"><a href="#"></a></span>
           </article>
         </header>
-        <article id="tab-sign" class="container">
-          <section id="croll-menu">
-           <article class="profile-fixed">
-              <span id="nav-close" class="icon-close-menu"><a href="#"></a></span>
-           </article>
-            <article class="info-fixed">
-              <span id="author" class="images-author"><a href="#"></a></span>
-              <h3 class="title-sub-header">Lam Nguyen</h3>
-              <span id="logout" class="author-logout"><a href="#"></a></span>
-           </article>
-           <nav>
-            <ul>
-              <li><a href="#"><span class="icon-menu ic-home"></span>Home</a></li>
-              <li><a href="#"><span class="icon-menu ic-sbj"></span>Subjects</a></li>
-              <li><a href="#"><span class="icon-menu ic-his"></span>History</a></li>
-              <li><a href="#"><span class="icon-menu ic-cha"></span>Challenge</a></li>
-              <li><a href="#"><span class="icon-menu ic-fri"></span>Friends</a></li>
-              <li><a href="#"><span class="icon-menu ic-mes"></span>Messages</a></li>
-              <li><a href="#"><span class="icon-menu ic-dis"></span>discussion</a></li>
-              <li><a href="#"><span class="icon-menu ic-ran"></span>Ranking</a></li>
-              <li><a href="#"><span class="icon-menu ic-sub"></span>Subscribe</a></li>
-              <li><a href="#"><span class="icon-menu ic-set"></span>Settings</a></li>
-            </ul>
-           </nav>
-          </section>         
-        </article>        
-            <article class="thread-discussion-header">
-                <input placeholder="Tap to create a new thread">
-            </article>
-            <article class="thread-discussion-fitter">
-             <article class="width-670px">
-                <span class="">discussions</span>
-                <span class="">discussions<i class="icon-fitter"></i></span>
-            </article>
-            </article> 
+
+
         <article class="main">
-            <article class="container min-800px thread-discussion-main">
+            <article class="min-800px container">
+              <span class="time-msg text-center"><time>12/6/2015 - 17:11</time></span>
+              <span class="line"></span>
+                <article class="message-details friend-message">
+                  <img class="friend-active" src="images/avatar-mes.png">
+                  <article class="chat-mess">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  </article>
 
-          <nav>
-            <a href="#" class="fitter-active">by Date</a>
-             <a href="#">by Time</a>
-              <a href="#">by Topic</a>
-          </nav>
-             <article class="thread-discussion-main">
-              <a href=="#"><i class="icon-fitter-content"></i>Yesterday</a>
-              <a href=="#"><i class="icon-fitter-content"></i>2 days ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>3 days ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>4 days ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>5 days ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>6 days ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>1 week ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>1 month ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>1 years ago</a>
-              <a href=="#"><i class="icon-fitter-content"></i>6 days ago</a>
-            </article>   
+                </article>
+                <span class="time-msg text-center"><time>12/6/2015 - 17:11</time></span>
+                 <span class="line"></span>
+                <article class="message-details me-message">
+                  <img class="me-active" src="images/avatar-mes.png">
+                  <article class="chat-mess">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                  </article>
+
+                </article>
+                <article class="message-details me-message">
+                  <img class="me-active" src="images/avatar-mes.png">
+                  <article class="chat-mess">
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </article>
+
+                </article>
+                <span class="time-msg text-center"><time>12/6/2015 - 17:11</time></span>
+                 <span class="line"></span>
+                <article class="message-details friend-message">
+                  <img class="friend-active" src="images/avatar-mes.png">
+                  <article class="chat-mess">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  </article>
+
+                </article>
 
 
+           
 
             </article>
         </article>
       </section>
+    <footer class="form-cus container">
+        <article class="disscus-footer-chat">
+          <input type="text" placeholder="Tap to reply">
+          <a style="padding:0px" class="col-xs-2" href="#">Send</a>
+        </article>
+
+      </footer>
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
@@ -121,10 +112,12 @@
         });
          $( "#tabs" ).tabs();
          
-       $('.ui-tabs-anchor').on('click',function(){
-        
 
-       })
+$(".dropdown-history").bind("click", function(){
+    $(".history-drop").slideToggle();
+    return false;
+    
+})
         
         // Initialize navgoco with default options
         $(".main-menu").navgoco({
