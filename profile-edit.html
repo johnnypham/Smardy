@@ -23,12 +23,12 @@
   </head>
 
   <body>
-    <section id="topic">
-      <section class="head-cus page-topic">
+    <section id="edit-profile-page">
+      <section class="head-cus edit-profile">
         <header>
           <article class="container">
               <span class="back"><a href="#"></a></span>
-              <h3 class="title-sub-header">discussion</h3>
+              <h3 class="title-sub-header">profile</h3>
               <span id="nav-expander" class="menu"><a href="#"></a></span>
           </article>
         </header>
@@ -59,21 +59,29 @@
           </section>         
         </article>        
             
-        <article class="profile-details">
+        <article class="profile-edit">
           <header class="text-center">
               <img src="images/avatar.png">
-              <h3>Lam Nguyen</h3>
-              <span><a href="#"></a><i class="icon-edit-profile">Edit Profile</a></span>
+              <span id="edit-photo"><a href="#"><i class="icon-edit-photo"></i>Edit Photo</a></span>
+              <span id="edit-wallpaper"><a href="#"><i class="icon-edit-wallpaper"></i>Edit Wallpaper</a></span>
           </header>
-          <article>
-            <article class="left-profile"><i class="icon-point-profile"></i><span>899 Point</span></article>
-            <article class="center-profile"><i class="icon-point-profile"></i><span>899 Point</span></article>
-            <article class="right-profile"><i class="icon-point-profile"></i><span>899 Point</span></article>
-          </article>
         </article>
         <article class="main">
             <article class="container min-800px profile-page">
-
+              <article class="form-edit-page">
+                 <label>display name</label>
+                 <span>
+                    <i class="icon-usr-profile"></i><input type="text"/>
+                  </span> 
+                 <label>Gender</label>
+                 <span><i class="icon-gender"></i><input type="text"/></span> 
+                  <label>e-mail</label>
+                 <span><i class="icon-mail-profile"></i><input type="email"/></span> 
+                  <label>school</label>
+                 <span><i class="icon-school"></i><input type="text"/></span> 
+                  <label>country</label>
+                 <span><i class="icon-country"></i><input type="text"/></span> 
+              </article>
 
             </article>
         </article>
@@ -81,30 +89,8 @@
       </section>
 
     </section>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-<!-- Modal -->
-<article class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <article class="modal-dialog">
-    <article class="modal-content">
-      <article class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-       
-      </article>
-      <article class="modal-body">
-        REinforce the concept<br> you are weak at 
-      </article>
-      <article class="modal-footer">
-                <button type="button" class="btn btn-primary">start<br>
-quizzes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-      </article>
-    </article>
-  </article>
-</article>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
