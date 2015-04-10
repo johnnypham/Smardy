@@ -83,7 +83,7 @@
       </section>
       <footer>
         <article class="friend-list-footer">
-        <article class="footer-left">
+        <article id="smardy-footer" class="cus-on-footer footer-left">
           <span>
             <a href="#">
               <i class="footer-icon smardy-icon"></i>
@@ -91,7 +91,7 @@
             </a>
           </span>
         </article>
-        <article class="footer-center active-friends">
+        <article id="facebook-footer" class="cus-on-footer footer-center active-friends">
           <a href="#">
             <span>
               <i class="footer-icon face-icon"></i>
@@ -99,7 +99,7 @@
             </span>
           </a>
         </article>
-                <article class="footer-right">
+                <article id="contact-footer" class="cus-on-footer footer-right">
             <a href="#">
               <span>
                <i class="footer-icon contact-icon"></i>
@@ -168,7 +168,34 @@ $(".dropdown-history").bind("click", function(){
           $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
   }
 });
+// $('.cus-on-footer').on('click',function(e){
 
+//   var id =$('.cus-on-footer').attr('id')
+// console.log(id)
+//   // .hasClass('.active-friends').removeClass('active-friends');
+//   // $(this).addClass('active-friends');
+
+
+// })
+
+$('#smardy-footer').on('click',function(){
+  if($('#facebook-footer,#contact-footer').hasClass('active-friends')){
+    $('#facebook-footer,#contact-footer').removeClass('active-friends');
+  }
+  $(this).addClass('active-friends');
+})
+$('#facebook-footer').on('click',function(){
+  if($('#smardy-footer,#contact-footer').hasClass('active-friends')){
+    $('#smardy-footer,#contact-footer').removeClass('active-friends');
+  }
+  $(this).addClass('active-friends');
+})
+$('#contact-footer').on('click',function(){
+  if($('#facebook-footer,#smardy-footer').hasClass('active-friends')){
+    $('#facebook-footer,#smardy-footer').removeClass('active-friends');
+  }
+  $(this).addClass('active-friends');
+})
       </script>
   </body>
 </html>

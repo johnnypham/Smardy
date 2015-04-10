@@ -69,58 +69,60 @@
                   </a>
               </article>
 
-<article id="icon-chat-btn">
-
-  <span class="icon-re-chat"></span>
-</article>
-
-            <article class="friend-li">
-              <img src="images/avatar.png" alt="friend">
-              <article>
-                  <article class="smardy-left">
-                       <span>Lam Nguyen</span>
-                        <span class="point-lst point-smardy-list"><i class="">350</i></span>
-                        <article class="vote-list-smardy">
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote"></span>
+      <article id="icon-chat-btn">
+        <span class="icon-re-chat"></span>
+      </article>
+      <section  id="list-chat-message">
+                  <article class="friend-li">
+                    <img src="images/avatar.png" alt="friend">
+                    <article>
+                        <article class="smardy-left">
+                             <span>Lam Nguyen</span>
+                              <span class="point-lst point-smardy-list"><i class="">350</i></span>
+                              <article class="vote-list-smardy">
+                                <span class="icon-vote good"></span>
+                                <span class="icon-vote good"></span>
+                                <span class="icon-vote"></span>
+                              </article>
                         </article>
+                         <a href="#" class="btn-chat">chat</a>
+                    </article>
                   </article>
-                   <a href="#" class="btn-chat">chat</a>
-              </article>
-            </article>
-            <article class="friend-li">
-              <img src="images/avatar.png" alt="friend">
-              <article>
-                  <article class="smardy-left">
-                       <span>Lam Nguyen</span>
-                        <span class="point-lst point-smardy-list"><i class="">350</i></span>
-                        <article class="vote-list-smardy">
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote"></span>
+                  <article class="friend-li">
+                    <img src="images/avatar.png" alt="friend">
+                    <article>
+                        <article class="smardy-left">
+                             <span>Lam Nguyen</span>
+                              <span class="point-lst point-smardy-list"><i class="">350</i></span>
+                              <article class="vote-list-smardy">
+                                <span class="icon-vote good"></span>
+                                <span class="icon-vote good"></span>
+                                <span class="icon-vote"></span>
+                              </article>
                         </article>
+                         <a href="#" class="btn-chat">chat</a>
+                    </article>
                   </article>
-                   <a href="#" class="btn-chat">chat</a>
-              </article>
-            </article>
-            <article class="friend-li">
-              <img src="images/avatar.png" alt="friend">
-              <article>
-                  <article class="smardy-left">
-                       <span>Lam Nguyen</span>
-                        <span class="point-lst point-smardy-list"><i class="">350</i></span>
-                        <article class="vote-list-smardy">
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote"></span>
+                  <article class="friend-li">
+                    <img src="images/avatar.png" alt="friend">
+                    <article>
+                        <article class="smardy-left">
+                             <span>Lam Nguyen</span>
+                              <span class="point-lst point-smardy-list"><i class="">350</i></span>
+                              <article class="vote-list-smardy">
+                                <span class="icon-vote good"></span>
+                                <span class="icon-vote good"></span>
+                                <span class="icon-vote"></span>
+                              </article>
                         </article>
+                         <a href="#" class="btn-chat">chat</a>
+                    </article>
                   </article>
-                   <a href="#" class="btn-chat">chat</a>
-              </article>
-            </article>
-
-            </article>
+            
+      </section>
+           
+      </article>
+           
         </article>
       </section>
     
@@ -183,6 +185,11 @@ $(".dropdown-history").bind("click", function(){
           $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
   }
 });
+    $('#icon-chat-btn').on('click',function(){
+        var height=$('#list-chat-message').height();
+        $(this).css('bottom',height+'px')
+      $('#list-chat-message').addClass('hello')
+    })
 
       </script>
   </body>

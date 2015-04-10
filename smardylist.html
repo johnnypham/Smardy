@@ -104,23 +104,32 @@
       </section>
       <footer>
         <section class="footer-smardy-list"> 
-          <article class="footer-left active-footer">
+          <article id="smardy-footer" class="footer-left active-friends">
+            <a href="#">
             <span>
               <i class="footer-icon smardy-icon"></i>
               smardy
+            </a>
+
             </span>
           </article>
-          <article class="footer-center">
-            <span>
-              <i class="footer-icon face-icon"></i>
-              facebook
-            </span>
+          <article id="facebook-footer" class="footer-center">
+            <a href="#">
+              <span>
+                <i class="footer-icon face-icon"></i>
+                facebook
+              </span>
+            </a>
+
           </article>
-                  <article class="footer-right">
-            <span>
+         <article id="contact-footer" class="footer-right">
+          <a href="#">
+                        <span>
              <i class="footer-icon contact-icon"></i>
               contact
             </span>
+          </a>
+
           </article>
 
         </section>
@@ -185,7 +194,24 @@ $(".dropdown-history").bind("click", function(){
           $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
   }
 });
-
+$('#smardy-footer').on('click',function(){
+  if($('#facebook-footer,#contact-footer').hasClass('active-friends')){
+    $('#facebook-footer,#contact-footer').removeClass('active-friends');
+  }
+  $(this).addClass('active-friends');
+})
+$('#facebook-footer').on('click',function(){
+  if($('#smardy-footer,#contact-footer').hasClass('active-friends')){
+    $('#smardy-footer,#contact-footer').removeClass('active-friends');
+  }
+  $(this).addClass('active-friends');
+})
+$('#contact-footer').on('click',function(){
+  if($('#facebook-footer,#smardy-footer').hasClass('active-friends')){
+    $('#facebook-footer,#smardy-footer').removeClass('active-friends');
+  }
+  $(this).addClass('active-friends');
+})
       </script>
   </body>
 </html>
