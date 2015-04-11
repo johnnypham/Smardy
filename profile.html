@@ -14,6 +14,7 @@
     <link href="css/mediaelementplayer.min.css" rel="stylesheet">
     <link href="css/mejs-skins.css" rel="stylesheet">
     <link href="css/jScrollbar.jquery.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -77,15 +78,16 @@
                 <h4>H2 Maths</h4>
 
                 <article class="completed-profile">
-                  <img src="images/marth.jpg">
-                    <article id="info-com">
-                        <span class="pecent-completed">65%</span>
-                        <span class="status-completed">completed</span>
-                        <article class="star-rate">
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote good"></span>
-                          <span class="icon-vote"></span>
-                        </article>
+                    <article class="pie_progress" role="progressbar" data-goal="50">
+                        <article id="info-com">
+                          <article class="pecent-completed pie_progress__number">0%</article>
+                          <article class="status-completed pie_progress__label">completed</article>
+                          <article class="star-rate">
+                            <span class="icon-vote-profile good"></span>
+                            <span class="icon-vote-profile good"></span>
+                            <span class="icon-vote-profile"></span>
+                          </article>
+                      </article>
                     </article>
                   </article>
                 <article id="ratting-circle">
@@ -145,6 +147,7 @@ quizzes</button>
     <script src="js/main.js"></script>
     <script src="js/jquery-mousewheel.js"></script>
      <script src="js/jScrollbar.jquery.js"></script>
+     <script src="js/jquery-asPieProgress.js"></script>
     <script>
 
 
@@ -165,7 +168,6 @@ quizzes</button>
         
 
        })
-        
         // Initialize navgoco with default options
         $(".main-menu").navgoco({
             caret: '<span class="caret"></span>',
@@ -182,14 +184,20 @@ quizzes</button>
                 easing: 'swing'
             }
         });
-  
-          
       });
     $('audio,video').mediaelementplayer({
         success: function(player, node) {
           $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
-  }
-});
+      }
+    });
+     $('.pie_progress').asPieProgress({
+            namespace: 'pie_progress',
+            barcolor: '#04b4d4',
+            barsize: '16',
+            trackcolor: '#5c4d6e',
+            size: 160,
+        });
+    $('.pie_progress').asPieProgress('start');
 
       </script>
   </body>

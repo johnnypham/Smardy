@@ -1088,12 +1088,15 @@ body.nav-expanded {
   border-radius: 0px;
   border:none;
 }
+.ui-state-active .video-list-tabs{
+   background-position:-416px -87px;
+}
 .video-list-tabs{
   background-image: url('images/sprite.png');
   width: 69px;
   height: 65px;
   float: left;
-  background-position:-416px -87px;
+  background-position:-651px -81px
 
 }
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
@@ -1141,27 +1144,33 @@ a:focus{
   width: 670px!important;
   margin: 0 auto;
 }
+
 .ui-accordion .ui-accordion-content{
   overflow: hidden;
 }
 .title-note-video{
-  width: 670px;
-  display: block;
-  margin: 0 auto;
+   width: 670px;
+  display: block!important;
+  color: #fff !important;
+  outline: none;
+  margin: 0 auto !important;
   border-top: 2px solid #fff;
-  padding: 20px 40px;
+  padding: 20px 40px !important;
+  font-size: 27px!important
 
 }
-#active-add-note.title-note-video{
+.active-note .title-note-video{
    border-top: 1px solid #463b52;
      background: #1f1a24;
 }
 .jScrollbar5{
     border-top: none;
     padding:0px!important;
+    border-left: none;
+    border-right: none
 
 }
-#active-add-note .icon-add-note{
+.icon-remove-note{
      background-image: url('images/sprite.png');
   width: 69px;
   height: 35px;
@@ -2112,7 +2121,7 @@ width: 100%;
   font-size:27px;
   color: #522732}
 .completed-profile {
-  width: 320px;
+  width: 250px;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -2136,8 +2145,8 @@ width: 100%;
 }
 #info-com {
   position: absolute;
-  top: 65px;
-  left: 90px;
+  top: 40px;
+  left: 60px;
 }
 .profile-page h3{
   font-size: 36px;
@@ -2473,3 +2482,77 @@ border-bottom: 3px solid #db3e67;
     .friend-li:first-child{
 border-top: 3px solid #db3e67;
     }
+
+
+
+.pie_progress {
+  text-align: center;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.pie_progress svg {
+  margin: 0 auto;
+}
+.icon-vote-profile {
+  background-image: url('images/sprite.png');
+  width: 50px;
+  height: 53px;
+  float: left;
+  background-position: -511px -989px;
+  display: block;
+  background-repeat: no-repeat;
+}
+.icon-vote-profile.good{
+    background-position:-588px -989px
+}
+.btn-setting-all{
+  display: inline-block;
+  width: 100%;
+  margin-top: 150px;
+}
+.settting-about{
+  text-transform: uppercase;
+  background-color: #db3e67;
+    margin-bottom: 40px;
+
+  box-shadow: 0 5px 0px #a62c4c
+}
+.settting-logout{
+  text-transform: uppercase;
+  background-color: #71697b;
+  box-shadow: 0 5px 0px #4b4156
+}
+.ui-state-active .video-note{
+
+    background-position: -578px -88px;
+}
+#active-add-note{
+  position: relative;
+}
+#active-add-note:after{
+content: ' ';
+  top: 20px;
+  left: -46px;
+  background-image: url('images/sprite.png');
+  width: 60px;
+  height: 53px;
+  float: left;
+  background-position: -680px -25px;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.ui-accordion-header-active{
+  background-color: #1f1a24!important
+}
+.ui-accordion-header-active .icon-add-note{
+  display: none
+}
+
+.ui-accordion-header .icon-remove-note{
+  display: none
+}
+.ui-accordion-header-active .icon-remove-note{
+  display: block
+}

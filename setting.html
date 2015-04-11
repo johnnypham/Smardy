@@ -82,7 +82,10 @@
                        <span class="title-setting">Push Notification</span>
                        <span class="status-setting off">OFF</span>
                     </article>               
-
+              <article class="btn-setting-all"> 
+                  <a href="#" class="btn-subject settting-about"> About</a>
+                   <a href="#" class="btn-subject settting-logout"> Log out</a>
+              </article>  
                </article>
             </article>
         </article>
@@ -102,8 +105,6 @@
     <script src="js/jquery-mousewheel.js"></script>
      <script src="js/jScrollbar.jquery.js"></script>
     <script>
-
-
     $(document).ready(function(){                       
        $('.jScrollbar5').jScrollbar();
        //Navigation Menu Slider
@@ -121,7 +122,6 @@
         
 
        })
-        
         // Initialize navgoco with default options
         $(".main-menu").navgoco({
             caret: '<span class="caret"></span>',
@@ -138,8 +138,6 @@
                 easing: 'swing'
             }
         });
-  
-          
       });
     $('audio,video').mediaelementplayer({
         success: function(player, node) {

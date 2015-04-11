@@ -189,10 +189,8 @@
 
               </article>
               <article id="tabs-2">
-                <h3 class="title-note-video">5.1 Intro to function <span class="icon-add-note"></span></h3>
-                 <h3 id="active-add-note" class="title-note-video">5.1 Intro to function <span class="icon-add-note"></span></h3>
-                  <article class="jScrollbar5">
-
+                <h3 class="title-note-video">5.1 Intro to function<span class="icon-remove-note"></span> <span class="icon-add-note"></span></h3>
+                 <article   class="jScrollbar5">
                     <article id="vertical-scrollbar-demo" class="jScrollbar_mask gray-skin demo">
                       <p>
                       semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae lacus massa. Etiam facilisis metus odio. Cras sit amet ipsum fermentum massa cursus elementum non vitae lectus. Maecenas porta, felis eu volutpat luctus, nunc massa ullamcorper leo, sed sollicitudin odio justo eu ante. Etiam pharetra pharetra rhoncus. Praesent pretium ornare consectetur. Proin lacinia pellentesque mattis. Vestibulum egestas, leo quis cursus pellentesque, metus enim interdum justo, vitae rhoncus dui nisi eu dui.
@@ -200,6 +198,16 @@
                       </p>
                     </article>
                   </article>
+                 <h3 id="active-add-note" class="title-note-video">5.2 Intro to function <span class="icon-remove-note"></span><span class="icon-add-note"></span></h3>
+                  <article class="jScrollbar5">
+                    <article id="vertical-scrollbar-demo" class="jScrollbar_mask gray-skin demo">
+                      <p>
+                      semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae lacus massa. Etiam facilisis metus odio. Cras sit amet ipsum fermentum massa cursus elementum non vitae lectus. Maecenas porta, felis eu volutpat luctus, nunc massa ullamcorper leo, sed sollicitudin odio justo eu ante. Etiam pharetra pharetra rhoncus. Praesent pretium ornare consectetur. Proin lacinia pellentesque mattis. Vestibulum egestas, leo quis cursus pellentesque, metus enim interdum justo, vitae rhoncus dui nisi eu dui.
+                      Proin venenatis, purus quis posuere adipiscing, felis turpis fermentum leo, sed pharetra tortor magna mattis enim. Vivamus urna lacus, blandit non aliquam vel, condimentum in magna. Maecenas suscipit sagittis nibh, a ultrices dui blandit eu. Aliquam urna erat, hendrerit sed gravida vitae, sodales sit amet ligula. Maecenas lobortis dolor eu sem porta pretium. Duis eu consectetur magna. Nullam egestas nunc sed lorem gravida eu congue nisl commodo. Etiam id enim urna. Ut consequat ultricies diam in dignissim. Morbi mi quam, aliquet posuere feugiat vitae, ornare vel lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis in dignissim orci. Phasellus viverra ullamcorper mollis. Sed aliquam commodo posuere. Cras non varius libero. Nulla consequat mi elementum libero porttitor tincidunt. Mauris venenatis malesuada sagittis. Nam viverra risus ut tortor convallis porttitor. Morbi convallis commodo massa, quis viverra massa pretium vitae. 
+                      </p>
+                    </article>
+                  </article>
+
               </article>
               
 
@@ -210,6 +218,7 @@
 
             </article>
         </article>
+       
       </section>
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -246,7 +255,15 @@
           $('body').removeClass('nav-expanded');
         });
          $( "#tabs" ).tabs();
-         
+     
+    $( "#tabs-2" ).accordion({
+       active: 1,
+       collapsible: true,
+      change: function(event, ui) { 
+          alert('bob');
+       }})
+
+         //$( "#accordion" ).accordion();
         
         // Initialize navgoco with default options
         $(".main-menu").navgoco({
@@ -272,6 +289,25 @@
           $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
   }
 });
+ $('.add-des').on('click',function(e){
+      e.preventDefault()
+       $('#js-1').toggleClass('show');
+        $('.jScrollbar5').jScrollbar();
+    })
+    // $('.close-des').on('click',function(e){
+    //   e.preventDefault()
+    //  // $(this).parent().removeAttr('id');
+      
+    //   $(this).parent().find('span').removeClass('icon-remove-note').addClass('icon-add-note')
+    //   $(this).parent().next().toggle()
+    // })
+    // $('.add-des').on('click',function(e){
+    //   e.preventDefault()
+    //    $(this).parent().css('background-color','#1f1a24');
+      
+    //   // $(this).parent().find('a').removeClass('close-des').addClass('add-des')
+    //   $(this).parent().next().toggle()
+    // })
 
       </script>
   </body>
