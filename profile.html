@@ -194,11 +194,17 @@ quizzes</button>
             namespace: 'pie_progress',
             barcolor: '#04b4d4',
             barsize: '16',
+            speed: 150, // speed of 1/100
             trackcolor: '#5c4d6e',
+            easing: 'ease',
             size: 160,
         });
-    $('.pie_progress').asPieProgress('start');
 
+     setTimeout(function(){ 
+       $('.pie_progress').asPieProgress('start');
+
+     }, 2000);
+  
       </script>
   </body>
 </html>
